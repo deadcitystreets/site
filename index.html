@@ -25,6 +25,28 @@
             margin-top: 20px;
             font-size: 20px;
         }
+        .socials {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .socials-container {
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .socials-container a {
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .socials-container img {
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+        }
+        .socials-container img:hover {
+            transform: scale(1.1);
+        }
         .embed-container {
             display: flex;
             flex-direction: row;
@@ -45,6 +67,18 @@
 <body>
     <img src="https://raw.githubusercontent.com/deadcitystreets/site/main/Facebook%20Template%201.jpg" alt="Dead City Streets Banner" class="banner">
     <div class="info">New album <b>"The Midnight Journals: Volume I - Elegy"</b> releasing April 3, 2025</div>
+    <div class="socials">Connect with me on social media:</div>
+    <div class="socials-container">
+        <a href="https://www.facebook.com/profile.php?id=61574107447092&sk=music" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/dead_city_streets_music" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://bsky.app/profile/deadcitystreets.bsky.social" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Bluesky_Logo.svg" alt="Bluesky">
+        </a>
+    </div>
     <div class="embed-container">
         <iframe src="https://artists.landr.com/056870231792"></iframe>
         <iframe src="https://artists.landr.com/056870459905"></iframe>
