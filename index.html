@@ -26,32 +26,27 @@
             margin-top: 20px;
             font-size: 20px;
         }
-        .tiles {
+        .embed-container {
             display: flex;
+            flex-direction: column;
             gap: 20px;
             margin-top: 20px;
+            width: 80%;
+            max-width: 800px;
         }
-        .tile {
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        .tile:hover {
-            background-color: #333;
+        iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
         }
     </style>
 </head>
 <body>
     <img src="https://raw.githubusercontent.com/deadcitystreets/site/main/Facebook%20Template%201.jpg" alt="Dead City Streets Banner" class="banner">
     <div class="info">New album <b>"The Midnight Journals: Volume I - Elegy"</b> releasing April 3, 2025</div>
-    <div class="tiles">
-        <a href="https://artists.landr.com/056870231792" class="tile" target="_blank">Listen Here</a>
-        <a href="https://artists.landr.com/056870459905" class="tile" target="_blank">More Music</a>
+    <div class="embed-container">
+        <iframe src="https://artists.landr.com/056870231792"></iframe>
+        <iframe src="https://artists.landr.com/056870459905"></iframe>
     </div>
 </body>
 </html>
-
