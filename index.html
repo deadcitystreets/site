@@ -102,13 +102,25 @@
         </a>
     </div>
 
-    <div class="presave-link">
-        <a href="https://artists.landr.com/056870578637" target="_blank">Pre-Save the Album Now</a>
+    <div class="presave-link" id="presaveContainer">
+        <!-- Dynamic content will be injected here -->
     </div>
 
     <div class="embed-container">
         <iframe src="https://artists.landr.com/056870231792"></iframe>
         <iframe src="https://artists.landr.com/056870459905"></iframe>
     </div>
+
+    <script>
+        const releaseDate = new Date("2025-04-05");
+        const now = new Date();
+        const container = document.getElementById("presaveContainer");
+
+        if (now < releaseDate) {
+            container.innerHTML = '<a href="https://artists.landr.com/056870578637" target="_blank">Pre-Save the Album Now</a>';
+        } else {
+            container.innerHTML = '<a href="#" target="_blank">Listen to the Album Now</a>'; // replace # with actual streaming link
+        }
+    </script>
 </body>
 </html>
